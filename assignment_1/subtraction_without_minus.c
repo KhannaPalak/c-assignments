@@ -1,3 +1,5 @@
+//Q3. WAP to subtract two integers without using Minus (-) operator.
+
  #include<stdio.h>
 
 int main(){
@@ -8,7 +10,7 @@ int main(){
     printf("Enter any two integers: ");
     scanf("%d%d",&a,&b);
 
-    sum = a + ~b + 1;
+    sum = a + ~b + 1 ;
 
     printf("Difference of two integers: %d",sum);
 

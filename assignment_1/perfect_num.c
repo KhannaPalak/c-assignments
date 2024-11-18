@@ -1,22 +1,23 @@
+//Q5. WAP to check whether number is Perfect Number or not.
 #include <stdio.h>
  
 int main()
 {
-    int number, rem, sum = 0, i;
+    int num, rem, sum = 0, i;
  
     printf("Enter a Number: ");
-    scanf("%d", &number);
-    for (i = 1; i <= (number - 1); i++)
+    scanf("%d", &num);
+    for (i = 1; i <= (num- 1); i++)
     {
-        rem = number % i;
+        rem = num % i;
 	if (rem == 0)
         {
             sum = sum + i;
         }
     }
-    if (sum == number)
-        printf("%d is perfect number", number);
+    if (sum == num)
+        printf("%d is perfect number", num);
     else
-        printf("%d is not a perfect number", number);
+        printf("%d is not a perfect number", num);
     return 0;
 }

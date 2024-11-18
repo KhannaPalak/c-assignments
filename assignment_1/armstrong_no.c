@@ -1,19 +1,18 @@
+//Q1. WAP to check whether a given is Armstrong or not
+
 #include <stdio.h>
 int main() 
 {
-    int num, originalNum, remainder, result = 0;
+    int num, a, remainder, result = 0;   // a is the original number !
     printf("Enter a three-digit integer: ");
     scanf("%d", &num);
-    originalNum = num;
+    a = num;
 
-    while (originalNum != 0) {
-       // remainder contains the last digit
-        remainder = originalNum % 10;
-        
-       result += remainder * remainder * remainder;
-        
-       // removing last digit from the orignal number
-       originalNum /= 10;
+    while (a != 0) 
+    {
+        remainder = a % 10;
+        result += remainder * remainder * remainder;
+        a /= 10;
     }
 
     if (result == num)

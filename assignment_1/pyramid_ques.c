@@ -1,3 +1,4 @@
+//Q9. WAP to print following Pyramid:
 #include<stdio.h>
 int main()
 {

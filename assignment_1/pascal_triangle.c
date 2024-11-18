@@ -1,3 +1,4 @@
+//Q10. WAP to print Pascal’s Triangle.
 #include <stdio.h> 
 
 int main() 
